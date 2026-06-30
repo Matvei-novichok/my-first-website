@@ -1,50 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+
 <head>
-    <title>Мой первый сайт</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Матвей | Frontend Developer</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <h1 class="main-title">Привет, меня зовут Матвей</h1>
 
-    <p>
-        Мне 16 лет. Я изучаю Full Stack разработку.
-    </p>
+<div class="profile-card">
 
-    <p>
-        Это мой первый сайт.
-    </p>
-
-    <h2 class="goals-title">Мои цели</h2>
-    <ul>
-        <li>Научиться разработке и изучать новое</li>
-        <li>Заработать много денег</li>
-        <li>Выучить фуллстэк разработку</li>
-        <li>Устроиться на высокооплачиваемую работу</li>
-    </ul>
-
-    <h2 class="skills-title">Мои навыки</h2>
-
-    <ul class="skills">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Английский язык</li>
-    </ul>
-
-    <div class="cards">
-        <div class="card">
-           HTML
-        </div>
-
-        <div class="card">
-           CSS
-        </div>
-
-        <div class="card">
-           JavaScript
-         </div>
+    <div class="avatar">
+        M
     </div>
+
+    <h1>
+        Привет, меня зовут Матвей 👋
+    </h1>
+
+    <p class="subtitle">
+        Начинающий Full Stack разработчик.
+        Здесь я публикую свои проекты и показываю прогресс в обучении.
+    </p>
+
+    <h2>🎯 Мои цели</h2>
+
+    <ul class="goals">
+
+        <li>Изучить Full Stack разработку</li>
+
+        <li>Создать сильное портфолио</li>
+
+        <li>Изучить React и Node.js</li>
+
+        <li>Получить первую работу разработчиком</li>
+
+    </ul>
+
+    <h2>💻 Мои навыки</h2>
+
+    <div class="skills">
+
+        <div class="skill">
+
+            <p>HTML</p>
+
+            <div class="progress">
+
+                <div class="progress-bar html" id="htmlBar"></div>
+
+            </div>
+
+        </div>
+
+        <div class="skill">
+
+            <p>CSS</p>
+
+            <div class="progress">
+
+                <div class="progress-bar css" id="cssBar"></div>
+
+            </div>
+
+        </div>
+
+        <div class="skill">
+
+            <p>JavaScript</p>
+
+            <div class="progress">
+
+                <div class="progress-bar js" id="jsBar"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <h2 class="projects-title">
+        🚀 Мои проекты
+    </h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+
+            <h3>
+                📋 TaskFlow
+            </h3>
+
+            <p>
+
+                Современное приложение для управления задачами.
+
+                Добавление задач, поиск,
+
+                LocalStorage и прогресс выполнения.
+
+            </p>
+
+            <div class="project-stack">
+
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>JavaScript</span>
+
+            </div>
+
+            <a
+                href="todo-list/index.html"
+                class="project-button">
+
+                Открыть проект →
+git remote add origin https://github.com/Matvei-novichok/my-first-website.gitт
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="buttons">
+
+        <a
+            class="link-button"
+            href="https://github.com/Matvei-novichok"
+            target="_blank">
+
+            GitHub
+
+        </a>
+
+        <a
+            class="link-button"
+            href="https://t.me/ТВОЙ_TELEGRAM"
+            target="_blank">
+
+            Telegram
+
+        </a>
+
+    </div>
+
+    <button id="themeButton">
+
+        🌙 Светлая тема
+
+    </button>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
