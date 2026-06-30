@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>📋 TaskFlow</h1>
+
+        <p class="subtitle">
+            Организуйте свои задачи быстро и удобно
+        </p>
+
+        <div class="stats">
+
+            <div class="stat-card">
+
+                <span>Всего</span>
+
+                <h3 id="taskCounter">0</h3>
+
+            </div>
+
+            <div class="stat-card">
+
+                <span>Выполнено</span>
+
+                <h3 id="completedCounter">0</h3>
+
+            </div>
+
+            <div class="stat-card">
+
+                <span>Осталось</span>
+
+                <h3 id="remainingCounter">0</h3>
+
+            </div>
+
+        </div>
+
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Поиск задач..."
+        >
+
+        <button id="clearCompleted">
+            🧹 Очистить выполненные
+        </button>
+
+        <div class="input-group">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Введите задачу..."
+            >
+
+            <button id="addButton">
+                Добавить
+            </button>
+        </div>
+
+        <ul id="taskList">
+
+        </ul>
+
+        <p id="emptyText">
+            <span class="empty-title">У вас пока нет задач</span>
+            <span class="empty-subtitle">Добавьте первую выше</span>
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
