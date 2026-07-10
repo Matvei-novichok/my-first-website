@@ -145,23 +145,24 @@ h2{
 .projects{
     display:flex;
     justify-content:center;
+    gap:30px;
     margin-top:30px;
+    align-items:stretch;
 }
 
 .project-card{
 
     width:100%;
+    max-width:360px;
+
+    display:flex;
+    flex-direction:column;
 
     background:#ffffff;
-
     border:1px solid #e5e7eb;
-
     border-radius:24px;
-
     padding:30px;
-
     box-shadow:0 15px 35px rgba(0,0,0,.08);
-
     transition:.3s;
 
 }
@@ -233,6 +234,7 @@ h2{
     border-radius:14px;
 
     transition:.3s;
+    margin-top:auto;
 
 }
 
@@ -438,3 +440,56 @@ h2{
 
 }
 
+/* ===========================
+   МОБИЛЬНЫЕ КАРТОЧКИ ПРОЕКТОВ
+=========================== */
+
+@media (max-width:768px){
+
+    .projects{
+
+        justify-content:flex-start;
+
+        overflow-x:auto;
+
+        overflow-y:hidden;
+
+        gap:20px;
+
+        padding-bottom:10px;
+
+        scroll-snap-type:x mandatory;
+
+        -webkit-overflow-scrolling:touch;
+
+    }
+
+    .projects::-webkit-scrollbar{
+
+        display:none;
+
+    }
+
+    .project-card{
+
+        min-width:300px;
+
+        max-width:300px;
+
+        flex-shrink:0;
+
+        scroll-snap-align:center;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .projects{
+
+        padding:0 20px 10px;
+
+    }
+
+}
