@@ -447,48 +447,22 @@ h2{
 @media (max-width:768px){
 
     .projects{
-
-        justify-content:flex-start;
-
+        display:flex;
         overflow-x:auto;
-
-        overflow-y:hidden;
-
         gap:20px;
-
-        padding-bottom:10px;
-
+        padding:0 20px 20px;
         scroll-snap-type:x mandatory;
-
         -webkit-overflow-scrolling:touch;
-
     }
 
     .projects::-webkit-scrollbar{
-
         display:none;
-
     }
 
     .project-card{
-
-        min-width:300px;
-
-        max-width:300px;
-
-        flex-shrink:0;
-
+        flex:0 0 calc(100% - 40px);
+        max-width:calc(100% - 40px);
         scroll-snap-align:center;
-
-    }
-
-}
-
-@media (max-width:768px){
-
-    .projects{
-
-        padding:0 20px 10px;
 
     }
 
