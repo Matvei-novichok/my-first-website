@@ -446,13 +446,26 @@ h2{
 
 @media (max-width:768px){
 
+    body{
+        padding:0;
+    }
+
+    .profile-card{
+        width:100%;
+        border-radius:0;
+        padding:25px 20px;
+    }
+
     .projects{
         display:flex;
         overflow-x:auto;
-        gap:20px;
-        padding:0 20px 20px;
+        overflow-y:hidden;
         scroll-snap-type:x mandatory;
+        scroll-behavior:smooth;
         -webkit-overflow-scrolling:touch;
+        gap:20px;
+        padding:0;
+        margin-top:30px;
     }
 
     .projects::-webkit-scrollbar{
@@ -460,10 +473,12 @@ h2{
     }
 
     .project-card{
-        flex:0 0 calc(100% - 40px);
-        max-width:calc(100% - 40px);
-        scroll-snap-align:center;
-
+        flex:0 0 100%;
+        min-width:100%;
+        max-width:100%;
+        scroll-snap-align:start;
+        padding:30px;
+        border-radius:24px;
     }
 
 }
