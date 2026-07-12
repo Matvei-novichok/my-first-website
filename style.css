@@ -482,3 +482,57 @@ h2{
     }
 
 }
+
+/* ===========================
+   SUPPORT
+=========================== */
+
+.support{
+    text-align:center;
+    margin-top:60px;
+}
+
+.support h2{
+    margin-bottom:15px;
+}
+
+.support p{
+    max-width:500px;
+    margin:0 auto 25px;
+    color:#64748b;
+    line-height:1.7;
+}
+
+.support-button{
+    display:inline-block;
+    background:linear-gradient(135deg,#f59e0b,#d97706);
+    color:white;
+    text-decoration:none;
+    padding:16px 30px;
+    border-radius:18px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.support-button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 15px 30px rgba(245,158,11,.35);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer{
+    margin-top:60px;
+    padding-top:30px;
+    border-top:1px solid #e5e7eb;
+    text-align:center;
+}
+
+.footer p{
+    color:#64748b;
+    font-size:15px;
+    margin:6px 0;
+}
